@@ -20,6 +20,10 @@ ul {
     padding: 0;
 }
 
+.utl {
+    outline: 2px solid tomato;
+}
+
 body {
     background-color: var(--grey);
     font-family: 'Roboto', sans-serif;
@@ -57,6 +61,8 @@ span {
 .contener {
     text-align: center;
     outline: 2px solid tomato;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -78,6 +84,34 @@ span {
 
 }
 
+.header-menu>li:hover {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.btn:hover,
+.btn:focus {
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header-shulok {
+    font-size: 14px;
+    line-height: 1.33;
+    text-align: left;
+    vertical-align: Top;
+    letter-spacing: 2%;
+    color: #212121;
+}
+
+.header-shulok:focus,
+.header-shulok:hover {
+    /* color: white; */
+    /* background-color: blue; */
+    cursor: pointer;
+}
 
 .header-item {
     /* position: absolute;
