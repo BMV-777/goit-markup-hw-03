@@ -14,10 +14,15 @@ h3,
 h4,
 h5,
 h6,
-p,
+p {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     margin: 0;
     padding: 0;
+    padding-left: 0;
 }
 
 .utl {
@@ -25,7 +30,7 @@ ul {
 }
 
 body {
-    background-color: var(--grey);
+
     font-family: 'Roboto', sans-serif;
 
 }
@@ -59,17 +64,20 @@ span {
 }
 
 .contener {
-    text-align: center;
-    outline: 2px solid tomato;
+    /* text-align: center; */
+    width: 1200px;
+    display: flex;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid tomato;
 }
 
 
 
 /* -------Header------ */
 
-.header-text {
+.header-studio {
     /* position: absolute;
  width: 145px;
  height: 31px;
@@ -84,9 +92,42 @@ span {
 
 }
 
+.header-list {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header .contener {
+    display: flex;
+    align-items: center;
+
+}
+
+/* .header-contener {
+    width: 1200px;
+    margin: auto;
+
+    outline: 2px solid tomato;
+} */
+
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    margin-left: auto;
+    display: flex;
+}
+
 .header-menu>li:hover {
     text-decoration: underline;
     color: var(--blue);
+}
+
+.header-list:not(:last-child) {
+    margin-right: 50px;
 }
 
 .btn:hover,
@@ -94,7 +135,7 @@ span {
     color: white;
     background-color: blue;
     cursor: pointer;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .header-shulok {
@@ -106,34 +147,25 @@ span {
     color: #212121;
 }
 
-.header-shulok:focus,
-.header-shulok:hover {
-    /* color: white; */
-    /* background-color: blue; */
-    cursor: pointer;
-}
-
 .header-item {
-    /* position: absolute;
-    width: 49px;
-    height: 16px;
-    left: 453px;
-    top: 32px; */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
+    display: block;
     font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    line-height: 1.33;
+    text-align: left;
+    vertical-align: Top;
+    letter-spacing: 2%;
     color: #212121;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 }
 
 .header-item:focus,
 .header-item:hover {
-    color: var(--white);
-    background-color: #2196F3;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
 }
+
 
 .header-mail {
     /* position: absolute;
@@ -141,13 +173,19 @@ span {
     height: 16px;
     left: 1078px;
     top: 32px; */
-
+    display: block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    margin-right: 50px;
+
+    /* padding: 10px; */
+
+    /* padding-left: 15px;
+    padding-right: 15px; */
 }
 
 .header-mail:focus,
@@ -162,7 +200,8 @@ span {
     height: 16px;
     left: 1263px;
     top: 32px; */
-
+    /* margin-right: 15px; */
+    display: block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -180,19 +219,18 @@ span {
 }
 
 .header-content {
-    border: 2px solid #2196F3;
     background-color: #FFFFFF;
-    outline: 2px solid tomato;
     padding-left: 15px;
     padding-right: 15px;
-    /* margin: 0 auto; */
-    /* width: 1200px; */
 }
 
 /* --------//Hero---------- */
 
 .hero-content {
     outline: 2px solid tomato;
+
+    /* width: 1200px; */
+    /* display: block; */
 }
 
 .hero-tex {}
@@ -200,8 +238,8 @@ span {
 
 .hero-usluga {
     background-color: #2F303A;
-    /* width: 1200px;
-  height: 600px; */
+    width: 1200px;
+    height: 600px;
     /* display: flex;
     justify-content: center; */
     outline: 2px solid tomato;
@@ -210,6 +248,7 @@ span {
 }
 
 .hero-efectivnosti {
+    display: block;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     /* text-align: center; */
@@ -218,8 +257,15 @@ span {
     line-height: 1.36;
     letter-spacing: 6%;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    padding: 0;
+    width: 696px;
+    height: 120px;
+    margin-bottom: 34px;
+    padding-left: 280px;
+    margin-right: 280px;
+    /* padding-top: 188px;
+    margin-left: 280px; 
+    margin-right: 280px;
+
     /* position: absolute; */
     /* width: 696px;
   height: 150px;
@@ -238,17 +284,20 @@ span {
     min-width: 200px;
     left: 700px;
     top: 430px;
-    /* position: absolute; */
+}
 
+.hero-botton {
 
-
+    margin-top: 220px;
 }
 
 
 
 .hero-section {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    margin-left: 30px;
+    padding-top: 75px;
+    padding-bottom: 100px;
     /* display: flex; */
     /* justify-content: space-around; */
     /* width: 270px;
@@ -263,7 +312,7 @@ span {
   height: 16px;
   left: 215px;
   top: 774px; */
-
+    padding-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -281,6 +330,7 @@ span {
   height: 75px;
   left: 215px;
   top: 800px; */
+    padding-top: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -314,6 +364,18 @@ span {
     letter-spacing: 3%;
     color: #212121;
 }
+
+.work-list,
+.work-logo {
+    display: flex;
+    margin: 10px;
+}
+
+
+/* .work-foto {
+    display: flex;
+    justify-content: center;
+} */
 
 /* ------FOOTER------- */
 
