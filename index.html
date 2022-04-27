@@ -98,13 +98,20 @@
                 <h2 class="work-info">Чем мы занимаемся</h2>
                 <ul class="work-list">
                     <li class=" work-logo list">
-                        <img class="work-item" src="./images/images/img1.jpg" alt="фото работы праграммиста">
+                        <div class="work-cards">
+                            <img class="work-item" src="./images/images/img1.jpg" alt="фото работы праграммиста">
+                        </div>
+                    </li>
+
+                    <li class="work-logo list">
+                        <div class="work-cards">
+                            <img class="work-item" src="./images/images/img 2.png" alt="фото работы праграммиста">
+                        </div>
                     </li>
                     <li class="work-logo list">
-                        <img class="work-item" src="./images/images/img 2.png" alt="фото работы праграммиста">
-                    </li>
-                    <li class="work-logo list">
-                        <img class="work-item" src="./images/images/img3.png" alt="фото работы праграммиста">
+                        <div class="work-cards">
+                            <img class="work-item" src="./images/images/img3.png" alt="фото работы праграммиста">
+                        </div>
                     </li>
                     </li>
 
@@ -112,46 +119,69 @@
                 </ul>
             </div>
         </section>
-        <section class="comanda">
+        <main class="comanda">
             <div class="-comanda-contener contener">
                 <h2 class="comando-text">Наша команда</h2>
                 <ul class="comands-prais">
-                    <li class="comanda-list list" width="270" height="480">
-                        <a class="foto-comand link " href="#">
-                            <img class="comando-img" src="./images/images/img_comanda/img4.jpg" alt="фото команды"
-                                width="270" height="260">
-                            <h3 class="title_foto">Игорь Демьяненко</>
-                            </h3>
-                            <p class="title_text">Product Designer</p>
-                        </a>
+                    <li class="comanda-list list">
+                        <article class="comanda-cards">
+                            <a class="foto-comand link " href="#">
+                                <div class="comanda-cards-tumb">
+                                    <img class="comando-img" src="./images/images/img_comanda/img4.jpg"
+                                        alt="фото команды" width="270" height="260">
+                                </div>
+                                <div class="comanda-content">
+                                    <h3 class="title-foto">Игорь Демьяненко</h3>
+                                    <p class="title-text">Product Designer</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
                     <li class="comanda-list list">
-                        <a class="foto-comand link" href="#">
-                            <img class="comando-img" src="./images/images/img_comanda/img5.jpg" alt="фото команды"
-                                width="270" height="260">
-                            <h3 class="title_foto">Ольга Репина</class=>
-                            </h3>
-                            <p class="title_text">Frontend Developer</p>
-                        </a>
+                        <article class="comanda-cards">
+                            <a class="foto-comand link" href="#">
+                                <div class="comanda-cards-tumb">
+                                    <img class="comando-img" src="./images/images/img_comanda/img5.jpg"
+                                        alt="фото команды" width="270" height="260">
+                                </div>
+                                <div class="comanda-content">
+                                    <h3 class="title-foto">Ольга Репина</h3>
+                                    <p class="title-text">Frontend Developer</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
                     <li class="comanda-list list">
-                        <a class="foto-comand link" href="#">
-                            <img class="comando-img" src="./images/images/img_comanda/img6.jpg" alt="фото команды"
-                                width="270" height="260">
-                            <h3 class="title_foto">Николай Тарасов</span></h3>
-                            <p class="title_text">Marketing</p>
-                        </a>
+                        <article class="comanda-cards">
+                            <a class="foto-comand link" href="#">
+                                <div class="comanda-cards-tumb">
+                                    <img class="comando-img" src="./images/images/img_comanda/img6.jpg"
+                                        alt="фото команды" width="270" height="260">
+                                </div>
+                                <div class="comanda-content">
+                                    <h3 class="title-foto">Николай Тарасов</h3>
+                                    <p class="title-text">Marketing</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
                     <li class="comanda-list list">
-                        <a class="foto-comand link" href="#">
-                            <img class="comando-img" src="./images/images/img_comanda/img7.jpg" alt="фото команды"
-                                width="270" height="260">
-                            <h3 class="title_foto">Михаил Ермаков</h3>
-                            <p class="title_text">UI Designer</p>
-                        </a>
+                        <article class="comanda-cards">
+                            <a class="foto-comand link" href="#">
+                                <div class="comanda-cards-tumb">
+                                    <img class="comando-img" src="./images/images/img_comanda/img7.jpg"
+                                        alt="фото команды" width="270" height="260">
+                                </div>
+                                <div class="comanda-content">
+                                    <h3 class="title-foto">Михаил Ермаков</h3>
+                                    <p class="title-text">UI Designer</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
                 </ul>
             </div>
+        </main>
         </section>
         <section class="footer contener">
             <p class="footer-text"><span>Web</span>Studio</a></p>
@@ -167,12 +197,14 @@
                     <li class="footer-adress list">
                         <a class="footer-mail link" href="mailto:borenkovmv@gimail.com">info@devstudio.com</a>
                     </li>
-                    <li class=" footer-adress list">
-                        <a class="footer-tel link" href="tel:+380952311120">+380952311120</a>
+                    <li class=" footer-adress-tel list">
+                        <a class="footer-tel  link" href="tel:+380952311120">+380952311120</a>
+                    </li>
                 </ul>
+
             </address>
         </section>
-    </main>
+
 </body>
 
 </html>

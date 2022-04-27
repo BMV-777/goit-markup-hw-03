@@ -40,6 +40,11 @@ body {
     --black-grey: #2F303A;
     --grey: #F5F4FA;
     --white-grey: #757575;
+    --cards-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    --card-shadow-heder: rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4);
 }
 
 span {
@@ -62,8 +67,6 @@ span {
 }
 
 .contener {
-    /* margin-left: auto;
-    margin-right: auto; */
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
@@ -80,6 +83,13 @@ span {
     /* text-decoration: underline; */
 }
 
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
 
 
 
@@ -146,6 +156,8 @@ span {
     padding-top: 25px;
     padding-bottom: 25px;
 
+
+
     color: #212121;
 }
 
@@ -161,22 +173,19 @@ span {
     /* margin-right: 50px; */
 }
 
-*/
+
 /* --------//Hero---------- */
 
-/* .hero-content {
-    outline: 2px solid tomato;
-}
+.hero-content {}
 
 .hero-usluga {
-    background-color: #2F303A;
-    /* width: 1200px; */
-/* height: 600px; */
-/* display: flex; */
-outline: 2px solid tomato;
-text-align: center;
-*/
-/* }
+    outline: 2px solid tomato;
+    text-align: center;
+
+    background-color: var(--card-shadow-heder);
+    background-image: url(../images/comand-min.jpg);
+
+}
 
 .hero-efectivnosti {
     font-family: 'Roboto';
@@ -189,9 +198,10 @@ text-align: center;
 
     color: #FFFFFF;
 
-} */
+}
 
-/* .btm {
+
+.btm {
 
     padding: 11px 20px;
     display: inline-block;
@@ -206,9 +216,9 @@ text-align: center;
 
 .hero-botton {
     margin-bottom: 270px;
-} */
+}
 
-/* .hero-section {
+.hero-section {
     display: flex;
     margin-left: -30px;
     flex-wrap: wrap;
@@ -217,10 +227,10 @@ text-align: center;
 .hero-text {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
-} */
+}
 
 
-/* .hero-item {
+.hero-item {
     margin-top: 10px;
     width: 270px;
     height: 75px;
@@ -233,7 +243,7 @@ text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
 
-} */
+}
 
 /* ---------HERO PORTFOLIO------------ */
 
@@ -270,24 +280,37 @@ text-align: center;
 .uslug-menu {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -20px;
+    margin-left: -30px;
     padding-top: 50px;
+    /* margin-bottom: -20px; */
+
 }
+
+
+
+.uslug-tumba {
+    outline: 1px solid teal;
+}
+
+.uslug-vubora * {
+    outline: 2px solid teal;
+}
+
 
 .uslug-vubora {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    align-items: center;
     height: 404px;
+
+    /* box-shadow: 0px 0px 10px 10px rgba(47, 48, 58, 0.4); */
 }
 
-.title-foto {
-    margin-top: 20px;
-}
+/* 
+.uslug-vubora>h3 p {
+    border: 2px solid var(--black-grey);
+} */
 
-.title-text {
-    margin-top: 4px;
-}
+
 
 /* ---------WORK------------- */
 
@@ -306,47 +329,47 @@ text-align: center;
 
 
 
-.work-list,
-.work-logo {
+.work-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+
 }
 
-.work-list {
-    margin-left: -20px;
-    margin-bottom: -20px;
+.work-cards {
+    width: 370px;
+    height: 294px;
+
 }
 
-/* .work {
-    align-items: center;
-} */
-
-.work-item {
-    /* width: calc((100% - 60) /3); */
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
+.work-logo {
+    outline: 2px solid red;
 }
-
 
 
 /* ---------------COMANDA---------- */
 
-/* .foto-comand {
+.foto-comand {
     outline: 2px solid teal;
-    /* flex-basis: calc(100% - 2 -30px); */
-/* margin-left: 30px; */
+
 }
 
-*/
-/* .comands-prais {
-    display: flex;
-    width: 270px;
-    height: 480px;
-    margin-left: -20px;
-} */
 
-/* .comando-text {
+.comands-prais {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 480px;
+
+}
+
+.comanda-cards {
+    box-shadow: var(--cards-shadow);
+}
+
+
+.comando-text {
     padding-top: 188px;
     margin-bottom: 50px;
     text-align: center;
@@ -359,11 +382,26 @@ text-align: center;
     color: #212121;
 }
 
-.comanda-list {
-    flex-basis: calc(100% / 3 - 30px);
+.comands-prais>.comanda-list {
+    flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
+    /* outline: 2px solid red; */
 }
- */
+
+.comanda-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.title-foto {
+    margin-top: 30px;
+}
+
+.title-text {
+    margin-top: 10px;
+}
+
+
 
 
 
@@ -386,8 +424,6 @@ text-align: center;
     font-style: Regular;
     font-size: 14px;
     line-height: 1.33;
-    text-align: left;
-    vertical-align: Top;
     letter-spacing: 2%;
 }
 
@@ -400,12 +436,22 @@ text-align: center;
     margin-bottom: 10px;
 }
 
+.footer-adress-tel {
+    padding-bottom: 60px;
+
+}
+
+.footer-list .footer-adress-tel>a {
+    color: var(--white);
+}
+
+
 .footer-list .footer-adress>a {
     color: var(--white);
 }
 
 /* ---------FOOTER PORTFOLIO--------------- */
-
+/* 
 .footer {
     height: 300px;
 
