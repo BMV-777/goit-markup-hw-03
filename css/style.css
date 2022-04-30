@@ -67,7 +67,7 @@ span {
 }
 
 .contener {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -181,9 +181,12 @@ img {
 .hero-usluga {
     outline: 2px solid tomato;
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/comand-min.jpg);
+}
 
-    background-color: var(--card-shadow-heder);
-    background-image: url(../images/comand-min.jpg);
+url(../images/comand-min.jpg);
 
 }
 
@@ -274,30 +277,28 @@ img {
 /* ---------USLUG PORTFOLIO------------ */
 
 .uslug-contener {
-    display: block;
+    /* display: block; */
 
 }
 
 .uslug-menu {
     display: flex;
     flex-wrap: wrap;
-    /* width: 400px; */
+
     margin-left: -30px;
     margin-bottom: -30px;
-    max-width: 100%;
+    /* max-width: 100%; */
 
 }
 
-.uslug-list {
-    max-width: 100%;
+.uslug-list:focus,
+.uslug-list:hover {
     box-shadow: var(--cards-shadow);
-    outline: 2px solid teal;
 }
 
 .title-text {
     margin-bottom: 20px;
 }
-
 
 .uslug-tumba {
     padding: 10px;
@@ -340,8 +341,9 @@ img {
 .work-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 100%;
+    /* justify-content: space-between; */
+    /* max-width: 100%; */
+    margin-left: -30px;
 
 }
 
@@ -352,7 +354,9 @@ img {
 }
 
 .work-logo {
-    outline: 2px solid red;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin-left: 30px;
+    /* outline: 2px solid red; */
 }
 
 
@@ -367,10 +371,16 @@ img {
 .comands-prais {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
-    height: 480px;
-    /* margin-left: -30px; */
+    /* max-width: 100%; */
+    /* height: 480px; */
+    margin-left: -30px;
 
+}
+
+.comanda-list {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin-left: 30px;
+    width: 480px;
 }
 
 .comanda-cards {
@@ -391,11 +401,6 @@ img {
     color: #212121;
 }
 
-.comands-prais>.comanda-list {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    /* outline: 2px solid red; */
-}
 
 .comanda-content {
     padding: 10px;
