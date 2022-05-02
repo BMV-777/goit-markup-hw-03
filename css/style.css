@@ -72,7 +72,7 @@ span {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .btn:hover,
@@ -103,27 +103,41 @@ img {
 .header-content {
     display: flex;
     align-items: center;
+
 }
 
 .header-menu {
     display: flex;
-    margin-left: 90px;
-
 }
 
 .header-right {
     margin-left: auto;
     display: flex;
+    align-items: center;
 }
 
 .header-contakt>a {
     color: var(--white-grey);
 }
 
+.header-studio::before {
+    contain: "";
+    display: block;
+    width: 67px;
+    height: 2px;
+    background-color: red;
+}
+
+/* .heder-imag {
+    display: flex;
+    align-items: center;
+} */
+
 
 .header-contener .header-list+.header-list {
     margin-left: 50px;
 }
+
 
 .header-right .header-contakt+.header-contakt {
     margin-left: 50px;
@@ -131,8 +145,10 @@ img {
 
 
 .header-studio {
-    margin-left: 90px;
     display: block;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    margin-right: 93px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -171,24 +187,32 @@ img {
 /* 
 .header-list:not(:last-child) {
     /* margin-right: 50px; */
-}
+/* } */
 
 
 /* --------//Hero---------- */
 
+
+
 .hero-content {}
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+
 .hero-usluga {
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/comand-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-url(../images/comand-min.jpg);
 
-}
 
 .hero-efectivnosti {
     font-family: 'Roboto';
@@ -254,20 +278,24 @@ url(../images/comand-min.jpg);
 .btn-menu:focus {
     color: white;
     background-color: blue;
-
-
 } */
 
-.hero-contener {
-    display: block;
+
+.hero-vubor {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
+/* .hero-contener {
+    margin-bottom: 50px;
+     display: block; 
+} */
 
 .hero-menu {
     display: flex;
     justify-content: center;
-    padding-top: 126px;
-    ;
 
+    margin-bottom: 50px;
 }
 
 .hero-contener .hero-spisok+.hero-spisok {
@@ -276,19 +304,16 @@ url(../images/comand-min.jpg);
 
 /* ---------USLUG PORTFOLIO------------ */
 
-.uslug-contener {
-    /* display: block; */
-
-}
-
 .uslug-menu {
     display: flex;
     flex-wrap: wrap;
 
     margin-left: -30px;
     margin-bottom: -30px;
-    /* max-width: 100%; */
+}
 
+hi .uslug-vubora {
+    width: 370px;
 }
 
 .uslug-list:focus,
@@ -296,26 +321,25 @@ url(../images/comand-min.jpg);
     box-shadow: var(--cards-shadow);
 }
 
+.uslug-list {
+    /* box-shadow: var(--cards-shadow); */
+}
+
 .title-text {
     margin-bottom: 20px;
 }
 
 .uslug-tumba {
-    padding: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    border: 1px solid #EEEEEE;
 }
-
-.uslug-vubora * {
-    /* outline: 2px solid teal; */
-
-}
-
 
 .uslug-menu>.uslug-vubora {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
-
-
 }
 
 
@@ -362,25 +386,29 @@ url(../images/comand-min.jpg);
 
 /* ---------------COMANDA---------- */
 
-.foto-comand {
-    outline: 2px solid teal;
-
-}
-
-
 .comands-prais {
     display: flex;
     flex-wrap: wrap;
-    /* max-width: 100%; */
-    /* height: 480px; */
-    margin-left: -30px;
 
+    margin-left: -30px;
 }
 
 .comanda-list {
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin-left: 30px;
-    width: 480px;
+    width: 270px;
+}
+
+.comanda-content {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.comanda-seti {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
 }
 
 .comanda-cards {
@@ -401,12 +429,6 @@ url(../images/comand-min.jpg);
     color: #212121;
 }
 
-
-.comanda-content {
-    padding: 10px;
-    text-align: center;
-}
-
 .title-foto {
     margin-top: 30px;
 }
@@ -414,6 +436,25 @@ url(../images/comand-min.jpg);
 .title-text {
     margin-top: 10px;
 }
+
+.comanda-seti {
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap;
+    align-items: center; */
+}
+
+.comanda-item {
+    display: flex;
+    justify-content: space-between;
+    /* flex-basis: calc((100% / 4 * 10px)/ 4);
+    margin-right: 20px; */
+}
+
+/* .comanda-seti {
+    flex-basis: calc((100% / 4 * 10px)/ 4);
+    margin-left: 10px;
+} */
 
 
 
