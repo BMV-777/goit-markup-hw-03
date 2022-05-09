@@ -40,6 +40,7 @@ body {
     --black-grey: #2F303A;
     --grey: #F5F4FA;
     --white-grey: #757575;
+    --grey-white: #E5E5E5;
     --cards-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -72,6 +73,7 @@ span {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
     /* outline: 2px solid tomato; */
 }
 
@@ -115,6 +117,33 @@ img {
     display: flex;
     align-items: center;
 }
+
+/* .header-contakt::before {
+    display: inline-flex;
+
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    outline: 2px solid red;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.header-mail::before {
+    background-image: url(../images/svg/konvert.svg);
+
+}
+
+.header-tel::before {
+    background-image: url(../images/svg/mobal.svg);
+} */
+
+
+
 
 .header-contakt>a {
     color: var(--white-grey);
@@ -184,6 +213,11 @@ img {
     cursor: pointer;
 }
 
+.header-tel {}
+
+
+
+
 /* 
 .header-list:not(:last-child) {
     /* margin-right: 50px; */
@@ -194,7 +228,9 @@ img {
 
 
 
-.hero-content {}
+.hero-content {
+    background-color: white;
+}
 
 .header {
     border-bottom: 1px solid #ECECEC;
@@ -246,16 +282,73 @@ img {
 }
 
 .hero-section {
+    margin-top: 94px;
     display: flex;
+
     margin-left: -30px;
-    flex-wrap: wrap;
+
 }
 
 .hero-text {
-    flex-basis: calc(100% / 4 - 30px);
+    flex-basis: calc((100% - 3 * 30px) /3);
     margin-left: 30px;
 }
 
+.hero-text {
+    width: 270px;
+    /* height: 120px; */
+}
+
+.hero-h3 {
+    margin-top: 30px;
+}
+
+.hero-list {
+
+    background-color: var(--grey);
+    /* background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.hero-logo {
+    /* align-items: center; */
+    /* margin-left: 50px; */
+}
+
+
+
+/* .hero-text::before {
+    display: block;
+    content: "";
+
+    height: 120px;
+    background-position: center;
+    background-size: content;
+    background-repeat: no-repeat;
+}
+
+.hero-logo::before {
+    background-color: var(--grey);
+    background-image: url(../images/svg/antenna\ 1antena.svg);
+}
+
+.hero-logo1::before {
+    background-color: var(--grey);
+    background-image: url(../images/svg/clock\ 1clock.svg);
+}
+
+.hero-logo2::before {
+    background-color: var(--grey);
+    background-image: url(../images/svg/diagram\ 1pk.svg);
+
+}
+
+.hero-logo3::before {
+    background-color: var(--grey);
+    background-image: url(../images/svg/astronaut\ 1astronavt.svg);
+
+} */
 
 .hero-item {
     margin-top: 10px;
@@ -312,18 +405,15 @@ img {
     margin-bottom: -30px;
 }
 
-hi .uslug-vubora {
+/* .uslug-vubora {
     width: 370px;
-}
+} */
 
 .uslug-list:focus,
 .uslug-list:hover {
     box-shadow: var(--cards-shadow);
 }
 
-.uslug-list {
-    /* box-shadow: var(--cards-shadow); */
-}
 
 .title-text {
     margin-bottom: 20px;
@@ -346,6 +436,11 @@ hi .uslug-vubora {
 
 
 /* ---------WORK------------- */
+
+.work-foto {
+    background-color: #FFFFFF;
+    padding-bottom: 94px;
+}
 
 .work-info {
     padding-top: 90px;
@@ -393,6 +488,10 @@ hi .uslug-vubora {
     margin-left: -30px;
 }
 
+.comanda-contener {
+    background-color: var(--grey);
+}
+
 .comanda-list {
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin-left: 30px;
@@ -405,11 +504,36 @@ hi .uslug-vubora {
     text-align: center;
 }
 
-.comanda-seti {
+.comanda-socials {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.comanda-socials,
+.socials-item {
     margin-left: 10px;
 }
+
+.socials-icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red;
+    color: var(--white);
+}
+
+/* .socials-item {
+ display: flex; 
+flex-wrap: wrap;
+list-style: none;
+flex-basis: calc((100% - 4 * 10px) / 4);
+margin-left: 10px;
+} */
 
 .comanda-cards {
     box-shadow: var(--cards-shadow);
@@ -437,16 +561,10 @@ hi .uslug-vubora {
     margin-top: 10px;
 }
 
-.comanda-seti {
-    list-style: none;
-    display: flex;
-    /* flex-wrap: wrap;
-    align-items: center; */
-}
 
 .comanda-item {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     /* flex-basis: calc((100% / 4 * 10px)/ 4);
     margin-right: 20px; */
 }
@@ -482,23 +600,29 @@ hi .uslug-vubora {
     height: 92px;
     flex-basis: calc(100% / 6 - 30px);
     margin-left: 30px;
-    /* align-items: center; */
+
     border: 1px solid var(--white-grey);
     list-style: none;
 
 }
 
 .client-logo {
-    align-items: center;
+
+    flex-grow: ;
+    /* align-items: center; */
+
+    /* background-position: center; */
     /* margin: 20px 10px 20px 10px; */
-    /* margin-left: 25px;
-    margin-top: 25px; */
+
 }
 
 .client-block {
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-items: center;
     padding: 20px;
-    margin-left: 29px;
+    margin-left: 29px; */
+    /* background-position: center; */
 }
 
 
@@ -559,6 +683,76 @@ hi .uslug-vubora {
     color: var(--white);
 }
 
+.footer-seti {
+    display: flex;
+
+}
+
+
+
+.footer-list-item {
+    display: flex;
+    width: 44px;
+    height: 44px;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+
+/* -------Самолетик на кнопке-------- */
+
+.footer-bottom {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+
+    background-color: #2196F3;
+    color: white;
+    width: 180px;
+    height: 50px;
+
+}
+
+.footer-bottom::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /* background-color: red; */
+    background-image: url(../1.png);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.footer-bottom::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    /* background-color: red; */
+    background-image: url(../1.png);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ---------FOOTER PORTFOLIO--------------- */
 
 .footer {
@@ -594,38 +788,4 @@ hi .uslug-vubora {
 
 .footer-list .footer-item>a {
     color: var(--white);
-}
-
-.footer-bottom {
-    display: inline-flex;
-    align-items: center;
-    font-size: 14px;
-
-    background-color: #2196F3;
-    color: white;
-    width: 160px;
-    height: 50px;
-
-}
-
-.footer-bottom::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    /* background-color: red; */
-    background-image: url(../1.png);
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.footer-img {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: aqua;
-}
-
-.tet {
-    color: red;
 }

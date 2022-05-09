@@ -39,14 +39,14 @@
                 </ul>
             </nav>
             <ul class="header-right">
-                <li class="header-contakt list">
+                <li class="header-contakt  list">
                     <!-- <svg>
-                        <use href="images/vidjit/apple.svg" width="60" hight="60"></use>
+                        <use href="./svg/symbol-defs.svg#icon-konvert" width=" 32" hight="32"></use>
                     </svg> -->
-                    <a class="header-item link" href="mailto:borenkovmv@gimail.com">info@devstudio.com</a>
+                    <a class="header-mail   link" href="mailto:borenkovmv@gimail.com">info@devstudio.com</a>
                 </li>
-                <li class="header-contakt list">
-                    <a class="header-item link" href="tel:+380952311120">+380952311120</a>
+                <li class="header-contakt icon-mobail list">
+                    <a class="header-tel link" href="tel:+380952311120">+380952311120</a>
                 </li>
             </ul>
         </div>
@@ -60,11 +60,17 @@
                 <button class="hero-botton btm" type="button">Заказать услугу</button>
             </div>
         </section>
+        <!-- ---Hero ------>
         <section class="hero">
             <div class="hero-content contener ">
                 <ul class="hero-section">
-                    <li class="hero-text list">
-                        <h3> Внимание к деталям</h3>
+                    <li class="hero-text  list">
+                        <div class="hero-list">
+                            <svg class="hero-logo">
+                                <use href="./svg/symbol-defs.svg#icon-antenna" width="65" height="70"></use>
+                            </svg>
+                        </div>
+                        <h3 class="hero-h3"> Внимание к деталям</h3>
                         <p class="hero-item">
                             Идейные соображения, а также начало
                             повседневной работы по формированию позиции.
@@ -72,16 +78,26 @@
                         </p>
                     </li>
 
-                    <li class="hero-text list">
-                        <h3>Пунктуальность</h3>
+                    <li class="hero-text  list">
+                        <div class="hero-list">
+                            <svg class="hero-logo">
+                                <use href="./svg/symbol-defs.svg#icon-clock" width="65" height="70"></use>
+                            </svg>
+                        </div>
+                        <h3 class="hero-h3">Пунктуальность</h3>
                         <p class="hero-item">
                             Задача организации, в особенности же рамки
                             и место обучения кадров влечет за собой.
                         </p>
                     </li>
 
-                    <li class="hero-text list">
-                        <h3>Планирование</h3>
+                    <li class="hero-text  list">
+                        <div class="hero-list">
+                            <svg class="hero-logo">
+                                <use href="./svg/symbol-defs.svg#icon-pk" width="65" height="70"></use>
+                            </svg>
+                        </div>
+                        <h3 class="hero-h3">Планирование</h3>
                         <p class="hero-item">
                             Равным образом консультация с широким
                             активом в значительной степени обуславливает.
@@ -89,8 +105,13 @@
                         </p>
                     </li>
 
-                    <li class="hero-text list">
-                        <h3>Современные технологии</h3>
+                    <li class="hero-text  list">
+                        <div class="hero-list">
+                            <svg class="hero-logo">
+                                <use href="./svg/symbol-defs.svg#icon-astronaut" width="65" height="70"></use>
+                            </svg>
+                        </div>
+                        <h3 class="hero-h3">Современные технологии</h3>
                         <p class="hero-item">
                             Значимость этих проблем настолько очевидна,
                             что реализация плановых заданий.
@@ -124,7 +145,7 @@
             </div>
         </section>
         <main class="comanda">
-            <div class="-comanda-contener contener">
+            <div class="comanda-contener contener">
                 <h2 class="comando-text">Наша команда</h2>
                 <ul class="comands-prais">
                     <li class="comanda-list list">
@@ -141,11 +162,7 @@
                             </a>
                         </article>
                     </li>
-                    <!-- <li comanda-seti>
-                        <svg class="comanda-img">
-                            <use href="./svg/symbol-defs.svg#icon-Tvitar" width="32" height="32"></use>
-                        </svg>
-                    </li> -->
+
                     <li class="comanda-list list">
                         <article class="comanda-cards">
                             <a class="foto-comand link" href="#">
@@ -183,39 +200,50 @@
                             <div class="comanda-content">
                                 <h3 class="title-foto">Михаил Ермаков</h3>
                                 <p class="title-text">UI Designer</p>
+                                <ul class="comanda-socials ">
+                                    <li class=" socials-item list">
+                                        <a class="socials-link" href="#">
+                                            <svg class="socials-icon" width="20" height="20">
+                                                <use href="/svg/symbol-defs.svg#icon-instag">
+                                                </use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="socials-item list">
+                                        <a class="socials-link" href="#">
+                                            <svg class="socials-icon" width="20" height="20">
+                                                <use href="/svg/symbol-defs.svg#icon-tvitor">
+                                                </use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="socials-item list">
+                                        <a class="socials-link" href="#">
+                                            <svg class="socials-icon" width="20" height="20">
+                                                <use href="/svg/symbol-defs.svg#icon-fesbuk">
+                                                </use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="socials-item list">
+                                        <a class="socials-link" href="#">
+                                            <svg class="socials-icon" width="20" height="20">
+                                                <use href="/svg/symbol-defs.svg#icon-linkedin">
+                                                </use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                    <li class="comanda-list">
-                        <a class="comanda-item" href="#">
-                            <svg class="comanda-seti">
-                                <use href="/svg/symbol-defs.svg#icon-instag" width="44" height="44"></use>
-                            </svg>
-                        </a>
-                    </li>
 
-                    <li class="comanda-list">
-                        <a class="comanda-item" href="#">
-                            <svg class="comanda-seti">
-                                <use href="/svg/symbol-defs.svg#icon-tvitor" width="44" height="44"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="comanda-list">
-                        <a class="comanda-item" href="#">
-                            <svg class="comanda-seti">
-                                <use href="/svg/symbol-defs.svg#icon-fesbuk" width="44" height="44"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="comanda-list">
-                        <a class="comanda-item" href="#">
-                            <svg class="comanda-seti">
-                                <use href="/svg/symbol-defs.svg#icon-linkedin" width="44" height="44"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    </article>
+                        </article>
                 </ul>
             </div>
         </main>
@@ -227,7 +255,7 @@
                     <li class="client-item"><a href="#">
                             <div class="client-block">
                                 <svg class="client-logo">
-                                    <use href="./svg/symbol-defs.svg#icon-investr1" width="106" height="60"></use>
+                                    <use href="./svg/symbol-defs.svg#icon-investr3" width="41" height="46"></use>
                                 </svg>
                             </div>
                         </a>
@@ -235,32 +263,32 @@
                     <li class="client-item"><a href="#">
                             <div class="client-block">
                                 <svg class="client-logo">
-                                    <use href="./svg/symbol-defs.svg#icon-investr2" width="106" height="60"></use>
+                                    <use href="./svg/symbol-defs.svg#icon-investr4" width="40" height="52"></use>
                                 </svg>
                             </div>
                         </a>
                     </li>
                     <li class="client-item"><a href="#">
                             <svg class="client-logo">
-                                <use href="./svg/symbol-defs.svg#icon-investr3" width="106" height="60"></use>
+                                <use href="./svg/symbol-defs.svg#icon-investr2" width="43" height="41"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client-item"><a href="#">
                             <svg class="client-logo">
-                                <use href="./svg/symbol-defs.svg#icon-investr4" width="106" height="60"></use>
+                                <use href="./svg/symbol-defs.svg#icon-investr1" width="84" height="40"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client-item"><a href="#">
                             <svg class="client-logo">
-                                <use href="./svg/symbol-defs.svg#icon-investr5" width="106" height="60"></use>
+                                <use href="./svg/symbol-defs.svg#icon-investr5" width="62" height="45"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client-item"><a href="#">
                             <svg class="client-logo">
-                                <use href="./svg/symbol-defs.svg#icon-investr6" width="106" height="60"></use>
+                                <use href="./svg/symbol-defs.svg#icon-investr6" width="93" height="60"></use>
                             </svg>
                         </a>
                     </li>
@@ -270,26 +298,59 @@
         </section>
         <section class="footer contener">
             <p class="footer-text"><span>Web</span>Studio</a></p>
-            <img src="./sem.png" class="footer-img" width="40" height="40">
-
-            <address class="footer-contact">
-                <ul class="footer-list">
-                    <li class="footer-adress list">
-                        <a class=" footer-map link" href="https://goo.gl/maps/ywG4gMKJQdmbfkc86" target="_blank"
-                            rel="noopener noreferrer">
-                            г. Киев, пр-т Леси Украинки, 26
+            <img src="./1.png" class="footer-img" width="40" height="40">
+            <div class="footer-prais">
+                <p>присоединяйтесь</p>
+                <ul class="footer-seti">
+                    <li class="footer-list">
+                        <a class="footer-list-item" href="">
+                            <svg class="footer-seti">
+                                <use href="./svg/symbol-defs.svg#icon-instag"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li class="footer-adress list">
-                        <a class="footer-mail link" href="mailto:borenkovmv@gimail.com">info@devstudio.com</a>
+                    <li class="footer-list">
+                        <a class="footer-list-item" href="#">
+                            <svg class="footer-seti">
+                                <use href="./svg/symbol-defs.svg#icon-instag"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class=" footer-adress-tel list">
-                        <a class="footer-tel  link" href="tel:+380952311120">+380952311120</a>
+                    <li class="footer-list">
+                        <a class="footer-list-item" href="">
+                            <svg class="footer-seti">
+                                <use href="./svg/symbol-defs.svg#icon-instag"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list-item" href="">
+                            <svg class="footer-seti">
+                                <use href="./svg/symbol-defs.svg#icon-instag"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-                <div>
+            </div>
+            <div>
+                <address class="footer-contact">
+                    <ul class="footer-list">
+                        <li class="footer-adress list">
+                            <a class=" footer-map link" href="https://goo.gl/maps/ywG4gMKJQdmbfkc86" target="_blank"
+                                rel="noopener noreferrer">
+                                г. Киев, пр-т Леси Украинки, 26
+                            </a>
+                        </li>
+                        <li class="footer-adress list">
+                            <a class="footer-mail link" href="mailto:borenkovmv@gimail.com">info@devstudio.com</a>
+                        </li>
+                        <li class=" footer-adress-tel list">
+                            <a class="footer-tel  link" href="tel:+380952311120">+380952311120</a>
+                        </li>
+                    </ul>
+
                     <button class="footer-bottom" type="button">Быстрый старт</button>
-                </div>
+            </div>
 
             </address>
         </section>
