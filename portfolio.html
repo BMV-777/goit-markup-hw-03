@@ -38,14 +38,17 @@
             </nav>
             <ul class="header-right">
                 <li class="header-contakt list">
-                    <a class="header-item link" href="mailto:borenkovmv@gimail.com">
-                        <!-- <svg class="heder-imag">
-                            <use href="/svg/symbol-defs.svg#icon-konvert" width="16" height="12"></use>
-                        </svg> -->
+                    <a class="header-pohta link" href="mailto:borenkovmv@gimail.com">
+                        <svg class="header-mail" width="16" height="12">
+                            <use href="/svg/symbol-defs.svg#icon-konvert"></use>
+                        </svg>
                         info@devstudio.com</a>
                 </li>
                 <li class="header-contakt list">
-                    <a class="header-item link" href="tel:+380952311120">+380952311120</a>
+                    <a class="header-tel link" href="tel:+380952311120">
+                        <svg class="header-mob" width="10" height="16">
+                            <use href="/svg/symbol-defs.svg#icon-telefon"></use>
+                        </svg>+380952311120</a>
                 </li>
             </ul>
         </div>
@@ -56,19 +59,19 @@
             <div class="hero-contener">
                 <ul class="hero-menu">
                     <li class="hero-spisok list">
-                        <button class="btn " type="button">Веб</button>
+                        <button class="btn-menu " type="button">Все</button>
                     </li>
                     <li class="hero-spisok list">
-                        <button class="btn " type="button">Веб-сайты</button>
+                        <button class="btn-menu " type="button">Веб-сайты</button>
                     </li>
                     <li class="hero-spisok list">
-                        <button class="btn" type="button">Приложения</button>
+                        <button class="btn-menu" type="button">Приложения</button>
                     </li>
                     <li class="hero-spisok list">
-                        <button class="btn" type="button">Дизайн</button>
+                        <button class="btn-menu" type="button">Дизайн</button>
                     </li>
                     <li class="hero-spisok list">
-                        <button class="btn" type="button">Маркейтинг</button>
+                        <button class="btn-menu" type="button">Маркейтинг</button>
                     </li>
                 </ul>
             </div>
@@ -215,25 +218,58 @@
         </section>
     </main>
     <footer class="footer contener">
-        <a class="footer-studio link" href="">
-            <p class="footer-web "><span>Web</span>Studio</p>
-        </a>
-        <address class=" footer-address ">
-            <ul class="footer-list">
-                <li class="footer-item list">
-                    <a class="footer-adress-karta link" href="https://goo.gl/maps/ywG4gMKJQdmbfkc86" target="_blank"
-                        rel="noopener noreferrer">
-                        г. Киев, пр-т Леси Украинки, 26
-                    </a>
-                </li>
-                <li class="footer-item list">
-                    <a class=" footer-mail link" href="mailto:borenkovmv@gimail.com">info@devstudio.com</a>
-                </li>
-                <li class="footer-item list">
-                    <a class="footer-tel link" href="tel:+380952311120">+380952311120</a>
-                </li>
-            </ul>
-        </address>
+        <div class="footer-section">
+            <div class="footer-block-section ">
+                <address class="footer-adress ">
+                    <a class="footer-text"><span>Web</span>Studio</a></p>
+                    <ul class="footer-adress-spisok">
+                        <li class="footer-spisok list"><a class=" footer-map link"
+                                href="https://goo.gl/maps/ywG4gMKJQdmbfkc86" target="_blank" rel="noopener noreferrer">
+                                г. Киев, пр-т Леси Украинки, 26
+                            </a>
+                        </li>
+                        <li class="footer-spisok list"><a class="footer-mail link"
+                                href="mailto:borenkovmv@gimail.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-spisok list"><a class="footer-tel link"
+                                href="tel:+380952311120">+380952311120</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-section-seti">
+                <p class="footer-item">присоединяйтесь</p>
+                <ul class="footer-seti list">
+                    <li class="footer-list">
+                        <a class="footer-list-item" href="">
+                            <svg class="footer-seti" width="20" height="20">
+                                <use href="./svg/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list-item" href="#">
+                            <svg class="footer-seti" width="20" height="20">
+                                <use href="/svg/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list-item" href="">
+                            <svg class="footer-seti" width="20" height="20">
+                                <use href="./svg/symbol-defs.svg#icon-tvitor"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list-item" href="">
+                            <svg class="footer-seti" width="20" height="20">
+                                <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     </footer>
 
