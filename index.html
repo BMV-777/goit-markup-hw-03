@@ -62,7 +62,7 @@
                     Эффективные решения для вашего бизнеса
                 </h1>
                 <!-- </div> -->
-                <button class="hero-botton btm" type="button">Заказать услугу</button>
+                <button class="hero-botton btm" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- ---Hero ------>
@@ -495,8 +495,18 @@
                     </ul>
                 </div>
             </div>
-
         </footer>
+        <!-- -----backdrop------ -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="btn-open" data-modal-close>
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./svg/symbol-defs.svg#icon-krestic"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
 </body>
 
 

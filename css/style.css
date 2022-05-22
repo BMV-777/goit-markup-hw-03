@@ -906,3 +906,47 @@ img {
 .footer-list .footer-item>a {
     color: var(--white);
 }
+
+
+/*-------------- backdrop----------------- */
+
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 105, 105, 0.2);
+    top: 0;
+}
+
+.modal {
+    position: absolute;
+    width: 400px;
+    min-height: 600px;
+    background-color: #FFFFFF;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.btn-open {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: unset;
+    border-radius: 50%;
+    top: 5px;
+    right: 5px;
+
+
+
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
