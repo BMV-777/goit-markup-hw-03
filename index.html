@@ -494,6 +494,18 @@
                         </li>
                     </ul>
                 </div>
+                <!-- ---Форма в footere----- -->
+                <form class="footer-form ">
+                    <div class="footer-form-list">
+                        <label for="mail" class="footer-form-text">Подпишитесь на рассылку</label>
+                        <input type="email" name="mail" id="mail" class="footer-form-mail" placeholder="E-mail" />
+                        <button type="button" class="btm-form">Подписатся
+                            <svg class="btm-icon" width="24" height="24">
+                                <use href="./svg/symbol-defs.svg#icon-samalet"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </footer>
         <!-- -----backdrop------ -->
@@ -504,11 +516,64 @@
                         <use href="./svg/symbol-defs.svg#icon-krestic"></use>
                     </svg>
                 </button>
+                <form class="modal-form">
+                    <b class="modal-titel">Оставьте свои данные, мы вам перезвоним</b>
+                    <div class="modal-form-fail">
+                        <label for="input-name" class="modal-form-label">Имя</label>
+                        <span class="input-wrap">
+                            <input type="text" name="input-name" id="input-name" class="modal-form-input"
+                                placeholder="Имя" />
+                            <svg class="modal-form-icon" width="18" height="18">
+                                <use href="./svg/symbol-defs.svg#icon-telo-modal"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="modal-form-fail">
+                        <label for="input-email" class="modal-form-label">Почта</label>
+                        <span class="input-wrap">
+                            <input type="email" name="input-email" id="input-email" class="modal-form-input"
+                                placeholder="E-mail" />
+                            <svg class="modal-form-icon" width="18" height="18">
+                                <use href="./svg/symbol-defs.svg#icon-trubka-modal"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="modal-form-fail">
+                        <label for="input-tel" class="modal-form-label">Телефон</label>
+                        <span class="input-wrap">
+                            <input type="tel" name="input-tel" id="input-tel" class="modal-form-input"
+                                placeholder="+380952311120" />
+                            <svg class="modal-form-icon" width="18" height="18">
+                                <use href="./svg/symbol-defs.svg#icon-mail-modal"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="modal-form-fail">
+                        <label for="comment" class=" modal-form-label"></label>
+                        <textarea name="modal-comment" id="comment" class="modal-comment"
+                            placeholder="Кометарии"></textarea>
+                    </div>
+                    <div class="modal-form-fail">
+                        <input type="checkbox" name="policy" class="hiddan-modal  checkbox" id="check" />
+                        <label for="check" class="check-label"><span class="  ican-check">
+                                <svg class="" width="11" height="8">
+                                    <use href="./svg/symbol-defs.svg#icon-galka"></use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю<a href="#">Условия
+                                договора</a></label>
+                    </div>
+                    <button type="button" class="btm-modal">Отправить</button>
+
+                </form>
             </div>
-        </div>
-        <script src="./js/modal.js"></script>
+
+
+            <script src="./js/modal.js"></script>
 </body>
 
-
+<!-- <svg class="modal-fprm-icon" width="18" height="18">
+    <use href="./symbol-defs.svg#icon-telo-modal"></use>
+</svg> -->
 
 </html>
